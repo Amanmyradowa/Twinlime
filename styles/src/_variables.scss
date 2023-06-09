@@ -1,0 +1,14 @@
+$red: red;
+$backgorundColor1:  #5C903B;
+$backgorundColor2: #E2E8CA;
+$white: white;
+$hoverBckg: #EEF3DA;
+$inputColor: #5B5B5B;
+
+
+@mixin flex($justify:space-between,$aligin:center,$direction:row){
+    display: flex;
+    justify-content: $justify;
+    align-items: $aligin;
+    flex-direction: $direction;
+}

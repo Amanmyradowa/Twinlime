@@ -1,0 +1,22 @@
+*{
+    scroll-behavior: initial;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin tablet{
+    @media (max-width:1000px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:640px) {
+        @content;
+    }
+}
+
+@mixin res($width){
+    @media (max-width:$width) {
+        @content;
+    }
+}
